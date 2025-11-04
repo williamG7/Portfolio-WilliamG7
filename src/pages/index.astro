@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import GmailIcon from "../components/icons/Gmail.astro";
+import LinkedInIcon from "../components/icons/Linkedin.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+ title="Portafolio de WilliamG7 - Desarrollador de aplicaciones y programador web"
+ description="Portafolio de WilliamG7, desarrollador de aplicaciones multiplataforma y programador web de Barcelona, España.">
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<img
+				class="rounded-full size-12 mb-4"
+				src=""
+				alt="imagen willliam logo"
+			/>
+			<h1
+				class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10"
+			>
+				Hola, soy WilliamG7 <a
+					href="https://linkednin/williamG7"
+					target="_blank"
+					rel="noopener"
+				>
+					<Badge>Disponible para trabjar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80 text-wrap">
+				Desarrolloador de aplicaciones multiplataforma y web, de
+				Barcelona España. Especializado en desarrollar soluciones
+			</h2>
+
+			<nav class="flex gap-x-2 mt-4">
+				<SocialPill href="http://Github/" >
+					<GithubIcon class="size-6" />
+					Github
+				</SocialPill>
+				<SocialPill href="https://linkedin.com/in/WilliamG7">
+					<LinkedInIcon class="size-6" />
+					Linkedin
+				</SocialPill>
+				<SocialPill href="mailto:WilliamG7@gmail.com">
+					<GmailIcon class="size-6" />
+					WilliamG7@gmail.com
+				</SocialPill>
+			</nav>
+		</section>
+
+		<section>
+			<Experience />
+		</section>
+
+	</main>
 </Layout>
