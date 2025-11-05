@@ -6,20 +6,25 @@ import GmailIcon from "../components/icons/Gmail.astro";
 import LinkedInIcon from "../components/icons/Linkedin.astro";
 import SocialPill from "../components/SocialPill.astro";
 import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
  title="Portafolio de WilliamG7 - Desarrollador de aplicaciones y programador web"
  description="Portafolio de WilliamG7, desarrollador de aplicaciones multiplataforma y programador web de Barcelona, España.">
-	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32 " >
 			<img
 				class="rounded-full size-12 mb-4"
 				src=""
 				alt="imagen willliam logo"
 			/>
 			<h1
-				class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10"
+				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold 
+				flex flex-row gap-x-4 pb-6 lg:pb-10"
 			>
 				Hola, soy WilliamG7 <a
 					href="https://linkednin/williamG7"
@@ -29,30 +34,40 @@ import Experience from "../components/Experience.astro";
 					<Badge>Disponible para trabjar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl opacity-80 text-wrap">
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px] ">
 				Desarrolloador de aplicaciones multiplataforma y web, de
 				Barcelona España. Especializado en desarrollar soluciones
 			</h2>
 
-			<nav class="flex gap-x-2 mt-4">
+			<nav class="flex gap-4 mt-8 flex-wrap">
 				<SocialPill href="http://Github/" >
-					<GithubIcon class="size-6" />
+					<GithubIcon class="size-4 md:size-6" />
 					Github
 				</SocialPill>
 				<SocialPill href="https://linkedin.com/in/WilliamG7">
-					<LinkedInIcon class="size-6" />
+					<LinkedInIcon class="size-4 md:size-6" />
 					Linkedin
 				</SocialPill>
 				<SocialPill href="mailto:WilliamG7@gmail.com">
-					<GmailIcon class="size-6" />
+					<GmailIcon class="size-4 md:size-6" />
 					WilliamG7@gmail.com
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
 
-		<section>
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-8 mb flex gap-x-3 items-center">
+				<Briefcase class="size-7" />
+				Experencia Laboral</h2>
 			<Experience />
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-8 mb flex gap-x-3 items-center">
+				<CodeIcon class="size-7" />
+				Proyectos</h2>
+			<Projects />
+		</SectionContainer>
 
 	</main>
 </Layout>

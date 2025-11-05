@@ -1,0 +1,30 @@
+---
+const PROJECTS = [
+    {
+        title: "Portfolio Website",
+        description:"A personal portfolio website to showcase my projects and skills.",
+        link: "",
+        github: "",
+        image: "https://via.placeholder.com/400x200.png?",
+        tags: ["Astro", "Tailwind CSS", "JavaScript"],
+    },
+];
+---
+
+{
+    PROJECTS.map(({ title, description, link, tags, image }) => (
+        <article>
+            <h3 class="text-2xl font-semibold text-blue-500 mb-2">{title}</h3>
+            <p class="text-lg mb-4 text-pretty">{description}</p>
+            <ul>
+                {tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+            <img class="rounded"
+                src={image}
+                alt={`captura de pantalla de la imagen ${image}`}
+            />
+        </article>
+    ))
+}
