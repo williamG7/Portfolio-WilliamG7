@@ -1,46 +1,155 @@
-# Astro Starter Kit: Basics
+# 🚀 Portfolio - William Guzmán
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Portfolio personal desarrollado con **Astro** y **Tailwind CSS**, diseñado para mostrar mi formación, proyectos y habilidades como desarrollador de aplicaciones multiplataforma y web.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Portfolio Preview](https://via.placeholder.com/1200x600/1a1a1a/ffffff?text=Portfolio+William+Guzm%C3%A1n)
 
-## 🚀 Project Structure
+## ✨ Características
 
-Inside of your Astro project, you'll see the following folders and files:
+- 🎨 **Diseño moderno y minimalista** con gradientes personalizados
+- 📱 **Totalmente responsivo** - optimizado para móvil, tablet y desktop
+- ⚡ **Rendimiento óptimo** con Astro (SSG)
+- 🎯 **Navegación fluida** con scroll suave entre secciones
+- 🌙 **Fondo degradado dinámico** con efectos visuales atractivos
+- 🔗 **Integración con redes sociales** (GitHub, LinkedIn, Gmail)
+
+## 🛠️ Tecnologías Utilizadas
+
+- **[Astro](https://astro.build/)** - Framework web moderno para sitios rápidos
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipado estático para JavaScript
+- **[Onest Variable Font](https://fonts.google.com/specimen/Onest)** - Tipografía personalizada
+
+## 📂 Estructura del Proyecto
 
 ```text
-/
+portfolio-WilliamDev/
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   ├── projects/          # Imágenes de proyectos
+│   └── img/               # Recursos estáticos
+├── src/
+│   ├── components/
+│   │   ├── Badge.astro              # Badge de estado
+│   │   ├── Experience.astro         # Sección de formación
+│   │   ├── ExperienceItem.astro     # Item individual de formación
+│   │   ├── Footer.astro             # Pie de página
+│   │   ├── Header.astro             # Menú de navegación
+│   │   ├── Projects.astro           # Galería de proyectos
+│   │   ├── SectionContainer.astro   # Contenedor de sección
+│   │   ├── SocialPill.astro         # Botones de redes sociales
+│   │   └── icons/                   # Iconos SVG personalizados
+│   │       ├── Briefcase.astro
+│   │       ├── Code.astro
+│   │       ├── Github.astro
+│   │       ├── Gmail.astro
+│   │       ├── Linkedin.astro
+│   │       └── User.astro
+│   ├── layouts/
+│   │   └── Layout.astro             # Layout principal
+│   ├── pages/
+│   │   └── index.astro              # Página principal
+│   └── styles/
+│       └── global.css               # Estilos globales
+├── astro.config.mjs
+├── tailwind.config.js
+├── tsconfig.json
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Instalación y Uso
 
-## 🧞 Commands
+### Requisitos previos
 
-All commands are run from the root of the project, from a terminal:
+- Node.js 18.14.1 o superior
+- pnpm (recomendado) o npm
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+### Comandos disponibles
 
-## 👀 Want to learn more?
+| Comando           | Acción                                              |
+| :---------------- | :-------------------------------------------------- |
+| `pnpm install`    | Instala las dependencias                            |
+| `pnpm dev`        | Inicia el servidor de desarrollo en `localhost:4321`|
+| `pnpm build`      | Compila el proyecto para producción en `./dist/`    |
+| `pnpm preview`    | Previsualiza la build de producción localmente      |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🎨 Recursos de Diseño
+
+Este proyecto utiliza los siguientes recursos externos para diseño y componentes:
+
+- **[ibelick Backgrounds](https://bg.ibelick.com/)** - Generador de fondos con gradientes CSS
+- **[Tabler Icons](https://tabler.io/icons)** - Biblioteca de iconos SVG de código abierto
+- **[Flowbite](https://flowbite.com/)** - Componentes UI con Tailwind CSS
+- **[SVGL](https://svgl.app/)** - Colección de logos SVG de tecnologías
+- **[Shots.so](https://shots.so/)** - Generador de mockups y capturas de pantalla
+
+## 📄 Secciones del Portfolio
+
+### 🏠 Inicio
+Presentación personal con foto de perfil, descripción profesional y enlaces a redes sociales.
+
+### 🎓 Formación
+Timeline con mi formación académica y cursos relevantes:
+- CFGS Desarrollo de Aplicaciones Multiplataforma (2024 - Actualidad)
+- Lógica y Fundamentos de Programación - Platzi (2023)
+- Aplicación de Electrónica y Robótica - SENA (2021)
+
+### 💼 Proyectos
+Galería de proyectos destacados con descripción, tecnologías utilizadas e imágenes.
+
+### 👤 Sobre Mí
+Información personal, enfoque profesional y objetivos como desarrollador.
+
+## 🎯 Personalización
+
+### Cambiar colores del tema
+
+Edita `src/layouts/Layout.astro` para modificar el gradiente de fondo:
+
+```astro
+<div class="fixed inset-0 -z-10 w-full h-full
+    [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+</div>
+```
+
+### Agregar nuevos proyectos
+
+Edita el array `PROJECTS` en `src/components/Projects.astro`:
+
+```javascript
+const PROJECTS = [
+    {
+        title: "Nombre del Proyecto",
+        description: "Descripción breve del proyecto",
+        link: "https://url-del-proyecto.com",
+        github: "https://github.com/usuario/repo",
+        image: "/projects/imagen.png",
+        tags: ["Astro", "React", "TypeScript"],
+    },
+];
+```
+
+## 📱 Responsividad
+
+El portfolio está optimizado para todas las pantallas:
+
+- **Móvil** (< 768px): Layout vertical, elementos apilados
+- **Tablet** (768px - 1024px): Diseño híbrido con elementos horizontales
+- **Desktop** (> 1024px): Diseño completo con anchura máxima de 1120px
+
+## 🤝 Contribuciones
+
+Este es un proyecto personal, pero si encuentras algún bug o tienes sugerencias, siéntete libre de abrir un issue o pull request.
+
+## 📧 Contacto
+
+- **GitHub**: [@williamG7](https://github.com/williamG7)
+- **LinkedIn**: [William Guzmán](https://linkedin.com/in/WilliamG7)
+- **Email**: WilliamG7@gmail.com
+
+## 📝 Licencia
+
+© 2025 William Guzmán. Todos los derechos reservados.
+
+---
+
+**Desarrollado con ❤️ por William Guzmán**

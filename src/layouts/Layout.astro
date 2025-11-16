@@ -24,9 +24,9 @@ const { title, description } = Astro.props
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-neutral-950 relative">
 		<div
-			class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24
+			class="fixed inset-0 -z-10 w-full h-full
 			[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
 		>
 		</div>
@@ -53,6 +53,7 @@ const { title, description } = Astro.props
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+
 	}
 
 	@media(prefers-reduce-motion: reduce) {
