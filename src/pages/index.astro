@@ -23,23 +23,21 @@ import Contact from "../components/Contact.astro";
 		<SectionContainer class="py-44 pb-32 " >
 			<div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
 				<img
-					class="rounded-full size-36 md:size-48 lg:size-56 flex-shrink-0"
-					src="/public/img/fotoCurriculum.jpg"
-					alt="imagen willliam logo"
+				class="rounded-full size-36 md:size-48 lg:size-56 flex-shrink-0"
+				src="/public/img/fotoCurriculum.jpg"
+				alt="imagen william logo"
 				/>
 				<div class="flex flex-col">
 					<h1
 						class="text-white text-2xl md:text-3xl lg:text-4xl font-bold 
 						pb-4 lg:pb-6"
 					>
-						William Guzmán
-					</h1>
-					<h2 class="text-lg lg:text-xl text-wrap max-w-[700px] ">
-						Desarrolloador de aplicaciones multiplataforma y web, de
-						Barcelona España. Especializado en desarrollar soluciones
-					</h2>
-
-					<nav class="flex gap-4 mt-8 flex-nowrap justify-center md:justify-start">
+					William Guzmán
+				</h1>
+				<h2 class="text-lg lg:text-xl text-wrap max-w-[700px] ">
+					Desarrollador de aplicaciones multiplataforma y web, de
+					Barcelona, España. Especializado en desarrollar soluciones.
+				</h2>					<nav class="flex gap-4 mt-8 flex-nowrap justify-center md:justify-start">
 						<SocialPill href="http://Github/" >
 							<GithubIcon class="size-4 md:size-6" />
 							Github
@@ -56,14 +54,12 @@ import Contact from "../components/Contact.astro";
 
 					<div class="flex justify-center mt-6">
 						<a
-							href="https://linkednin/williamG7"
+							href="https://linkedin.com/in/williamG7"
 							target="_blank"
 							rel="noopener"
-							class="inline-block"
+							class="inline-flex items-center gap-2 bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 text-base md:text-lg font-semibold px-4 py-2 md:px-6 md:py-3 rounded-lg border border-sky-500/30 transition-colors"
 						>
-							<span class="bg-blue-100 text-blue-800 text-base md:text-lg font-medium px-4 py-2 md:px-6 md:py-3 rounded-sm dark:bg-blue-900 dark:text-blue-300">
-								Contactar
-							</span>
+							Contactar
 						</a>
 					</div>
 				</div>
@@ -77,7 +73,7 @@ import Contact from "../components/Contact.astro";
 			<Experience />
 		</SectionContainer>
 
-		<SectionContainer id="proyectos">
+		<SectionContainer id="proyectos" class="lg:!w-[900px]">
 			<h2 class="text-3xl font-semibold mb-8 mb flex gap-x-3 items-center">
 				<CodeIcon class="size-7" />
 				Proyectos</h2>
@@ -87,7 +83,7 @@ import Contact from "../components/Contact.astro";
 		<SectionContainer id="sobreMi">
 			<h2 class="text-3xl font-semibold mb-8 flex gap-x-3 items-center">
 				<User class="size-7" />
-				Sobre Mi
+				Sobre Mí
 			</h2>
 			<AboutMe />
 		</SectionContainer>
