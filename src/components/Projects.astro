@@ -7,6 +7,15 @@ import AstroIcon from "./icons/AstroIcon.astro";
 import TailwindIcon from "./icons/TailwindIcon.astro";
 import TypeScriptIcon from "./icons/TypeScriptIcon.astro";
 import ProjectIcon from "./icons/ProjectIcon.astro";
+import HtmlIcon from "./icons/HtmlIcon.astro";
+import CssIcon from "./icons/CssIcon.astro";
+import JavaScriptIcon from "./icons/JavaScriptIcon.astro";
+import NodeIcon from "./icons/NodeIcon.astro";
+import ExpressIcon from "./icons/ExpressIcon.astro";
+import RetrofitIcon from "./icons/RetrofitIcon.astro";
+import RoomIcon from "./icons/RoomIcon.astro";
+import PythonIcon from "./icons/PythonIcon.astro";
+import MicrosoftIcon from "./icons/MicrosoftIcon.astro";
 
 // Configuración de colores e iconos para cada tecnología
 const TECH_CONFIG: Record<string, { color: string; icon: any }> = {
@@ -42,24 +51,60 @@ const TECH_CONFIG: Record<string, { color: string; icon: any }> = {
         color: "bg-blue-600/20 text-blue-300 border-blue-600/30", 
         icon: TypeScriptIcon 
     },
+    "HTML": { 
+        color: "bg-orange-600/20 text-orange-300 border-orange-600/30", 
+        icon: HtmlIcon 
+    },
+    "CSS": { 
+        color: "bg-blue-500/20 text-blue-300 border-blue-500/30", 
+        icon: CssIcon 
+    },
+    "JavaScript": { 
+        color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30", 
+        icon: JavaScriptIcon 
+    },
+    "Node.js": { 
+        color: "bg-green-600/20 text-green-300 border-green-600/30", 
+        icon: NodeIcon 
+    },
+    "Express": { 
+        color: "bg-gray-500/20 text-gray-300 border-gray-500/30", 
+        icon: ExpressIcon 
+    },
+    "Retrofit": { 
+        color: "bg-green-400/20 text-green-300 border-green-400/30", 
+        icon: RetrofitIcon 
+    },
+    "Room": { 
+        color: "bg-indigo-500/20 text-indigo-300 border-indigo-500/30", 
+        icon: RoomIcon 
+    },
+    "Python": { 
+        color: "bg-blue-400/20 text-blue-300 border-blue-400/30", 
+        icon: PythonIcon 
+    },
+    "Microsoft MakeCode": { 
+        color: "bg-gray-400/20 text-gray-300 border-gray-400/30", 
+        icon: MicrosoftIcon 
+    },
 };
 
 const PROJECTS = [
     {
-        title: "Portfolio Website",
-        description: "Portfolio personal desarrollado con Astro y Tailwind CSS para mostrar mis proyectos y habilidades como desarrollador.",
-        github: "https://github.com/williamG7/Portfolio-WilliamG7",
-        image: "/projects/portfolio.png",
-        tags: ["Astro", "Tailwind CSS", "TypeScript"],
+        title: "Mokepon",
+        description: "Juego multijugador inspirado en Pokémon con batallas en tiempo real. Permite que dos jugadores se conecten y enfrenten a sus criaturas en un mapa 2D interactivo con sistema de combate.",
+        github: "https://github.com/williamG7/Mokepon",
+        image: "/img/mokepon.png",
+        tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
         hasImage: true,
     },
     {
-        title: "Proyecto 2",
-        description: "Descripción breve del segundo proyecto y las tecnologías utilizadas en su desarrollo.",
-        github: "https://github.com/williamG7",
-        image: "https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Proyecto+2",
-        tags: ["Kotlin", "Android"],
-        hasImage: true,
+        title: "API List",
+        description: "App Android con la API de Rick and Morty. Incluye lista de personajes con vistas grid/lista, sistema de favoritos con Room, búsqueda en tiempo real, modo oscuro y navegación fluida con Jetpack Compose.",
+        github: "https://github.com/williamG7/api-listW",
+        image: "",
+        tags: ["Kotlin", "Android", "Jetpack Compose", "Retrofit", "Room"],
+        hasImage: false,
     },
     {
         title: "Maps Application",
@@ -70,26 +115,28 @@ const PROJECTS = [
         hasImage: false,
     },
     {
-        title: "Proyecto 4",
-        description: "Descripción breve del cuarto proyecto y las tecnologías utilizadas en su desarrollo.",
-        github: "https://github.com/williamG7",
-        image: "https://via.placeholder.com/400x250/1a1a1a/ffffff?text=Proyecto+4",
-        tags: ["Kotlin", "Android"],
+        title: "Conversor Rural",
+        description: "Juego educativo desarrollado en MakeCode Arcade que enseña conversiones matemáticas de forma interactiva mediante el intercambio de productos rurales. Incluye sistema de menús intuitivos, validación automática de respuestas, efectos visuales y sonoros, tabla de equivalencias integrada y retroalimentación inmediata que guía al jugador.",
+        github: "https://github.com/williamG7/conversorRural",
+        image: "/img/conversorRural.webp",
+        tags: ["Python", "TypeScript", "Microsoft MakeCode"],
         hasImage: true,
     },
 ];
 ---
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="columns-1 md:columns-2 gap-5">
     {
         PROJECTS.map(({ title, description, github, tags, image, hasImage }) => (
-            <article class="flex flex-col rounded-lg border border-white/10 bg-white/5 overflow-hidden hover:border-white/20 transition-all duration-300 hover:scale-105">
+            <article class="flex flex-col rounded-lg border border-white/10 bg-white/5 overflow-hidden hover:border-white/20 transition-all duration-300 hover:scale-105 mb-5 break-inside-avoid">
                 {hasImage && (
-                    <img
-                        class="w-full h-44 object-cover"
-                        src={image}
-                        alt={`Captura de pantalla del proyecto ${title}`}
-                    />
+                    <div class="p-3 pb-0">
+                        <img
+                            class="w-full h-56 object-cover rounded-lg"
+                            src={image}
+                            alt={`Captura de pantalla del proyecto ${title}`}
+                        />
+                    </div>
                 )}
                 <div class="p-5 flex flex-col">
                     <a

@@ -1,0 +1,12 @@
+---
+const { class: className } = Astro.props;
+---
+
+<svg class={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <!-- Corchete angular izquierdo < -->
+    <path d="M9 6L4 12L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Corchete angular derecho > -->
+    <path d="M15 6L20 12L15 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Pieza de bloque en el medio -->
+    <rect x="10" y="10" width="4" height="4" rx="0.5" fill="currentColor"/>
+</svg>
