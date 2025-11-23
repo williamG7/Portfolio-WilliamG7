@@ -20,8 +20,6 @@ Portfolio personal desarrollado con **Astro** y **Tailwind CSS**, diseñado para
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipado estático para JavaScript
 - **[Onest Variable Font](https://fonts.google.com/specimen/Onest)** - Tipografía personalizada
 
-```
-
 ## Instalación y Uso
 
 ### Requisitos previos
@@ -65,7 +63,6 @@ Galería de proyectos destacados con descripción, tecnologías utilizadas e im�
 ### Sobre Mí
 Información personal, enfoque profesional y objetivos como desarrollador.
 
-```
 
 ## Responsividad
 
