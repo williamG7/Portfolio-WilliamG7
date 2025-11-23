@@ -144,7 +144,7 @@ Este es un proyecto personal, pero si encuentras algún bug o tienes sugerencias
 
 - **GitHub**: [@williamG7](https://github.com/williamG7)
 - **LinkedIn**: [William Guzmán](https://linkedin.com/in/WilliamG7)
-- **Email**: WilliamG7@gmail.com
+- **Email**: williamg7.dev@gmail.com
 
 ## 📝 Licencia
 

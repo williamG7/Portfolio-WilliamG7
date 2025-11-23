@@ -27,7 +27,7 @@ const { title, description } = Astro.props
 	<body class="bg-black relative">
 		<div class="fixed inset-0 -z-10 bg-black">
 			<div class="absolute inset-0 bg-[radial-gradient(circle_600px_at_50%_200px,rgba(59,130,246,0.15),transparent)]"></div>
-			<div class="absolute inset-0 bg-[radial-gradient(#ffffff25_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+			<div class="absolute inset-0 bg-[radial-gradient(#ffffff25_1px,transparent_1px)] bg-size-[40px_40px]"></div>
 		</div>
 
 		<Header />
@@ -44,6 +44,8 @@ const { title, description } = Astro.props
 	html {
 		font-family: "Onest Variable", sans-serif;
 		scroll-behavior: smooth;
+		margin: 0;
+		padding: 0;
 	}
 
 	body {
@@ -52,7 +54,8 @@ const { title, description } = Astro.props
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-
+		margin: 0;
+		padding: 0;
 	}
 
 	@media(prefers-reduce-motion: reduce) {
