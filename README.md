@@ -20,40 +20,6 @@ Portfolio personal desarrollado con **Astro** y **Tailwind CSS**, diseñado para
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipado estático para JavaScript
 - **[Onest Variable Font](https://fonts.google.com/specimen/Onest)** - Tipografía personalizada
 
-## 📂 Estructura del Proyecto
-
-```text
-portfolio-WilliamDev/
-├── public/
-│   ├── projects/          # Imágenes de proyectos
-│   └── img/               # Recursos estáticos
-├── src/
-│   ├── components/
-│   │   ├── Badge.astro              # Badge de estado
-│   │   ├── Experience.astro         # Sección de formación
-│   │   ├── ExperienceItem.astro     # Item individual de formación
-│   │   ├── Footer.astro             # Pie de página
-│   │   ├── Header.astro             # Menú de navegación
-│   │   ├── Projects.astro           # Galería de proyectos
-│   │   ├── SectionContainer.astro   # Contenedor de sección
-│   │   ├── SocialPill.astro         # Botones de redes sociales
-│   │   └── icons/                   # Iconos SVG personalizados
-│   │       ├── Briefcase.astro
-│   │       ├── Code.astro
-│   │       ├── Github.astro
-│   │       ├── Gmail.astro
-│   │       ├── Linkedin.astro
-│   │       └── User.astro
-│   ├── layouts/
-│   │   └── Layout.astro             # Layout principal
-│   ├── pages/
-│   │   └── index.astro              # Página principal
-│   └── styles/
-│       └── global.css               # Estilos globales
-├── astro.config.mjs
-├── tailwind.config.js
-├── tsconfig.json
-└── package.json
 ```
 
 ## 🚀 Instalación y Uso
@@ -109,23 +75,7 @@ Edita `src/layouts/Layout.astro` para modificar el gradiente de fondo:
 <div class="fixed inset-0 -z-10 w-full h-full
     [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
 </div>
-```
 
-### Agregar nuevos proyectos
-
-Edita el array `PROJECTS` en `src/components/Projects.astro`:
-
-```javascript
-const PROJECTS = [
-    {
-        title: "Nombre del Proyecto",
-        description: "Descripción breve del proyecto",
-        link: "https://url-del-proyecto.com",
-        github: "https://github.com/usuario/repo",
-        image: "/projects/imagen.png",
-        tags: ["Astro", "React", "TypeScript"],
-    },
-];
 ```
 
 ## 📱 Responsividad
