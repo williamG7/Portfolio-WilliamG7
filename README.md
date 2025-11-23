@@ -2,7 +2,7 @@
 
 Portfolio personal desarrollado con **Astro** y **Tailwind CSS**, diseñado para mostrar mi formación, proyectos y habilidades como desarrollador de aplicaciones multiplataforma y web.
 
-![Portfolio Preview](https://via.placeholder.com/1200x600/1a1a1a/ffffff?text=Portfolio+William+Guzm%C3%A1n)
+![Portfolio Preview](foto-portfolio.png)
 
 ## ✨ Características
 
