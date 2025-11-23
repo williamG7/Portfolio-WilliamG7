@@ -140,10 +140,10 @@ El portfolio está optimizado para todas las pantallas:
 
 Este es un proyecto personal, pero si encuentras algún bug o tienes sugerencias, siéntete libre de abrir un issue o pull request.
 
-## 📧 Contacto
+## 📬 Contacto
 
 - **GitHub**: [@williamG7](https://github.com/williamG7)
-- **LinkedIn**: [William Guzmán](https://linkedin.com/in/WilliamG7)
+- **LinkedIn**: [William Guzmán](https://www.linkedin.com/in/williamg7/)
 - **Email**: williamg7.dev@gmail.com
 
 ## 📝 Licencia
