@@ -79,7 +79,7 @@ Este es un proyecto personal, pero si encuentras algún bug o tienes sugerencias
 ## Contacto
 
 - **GitHub**: [@williamG7](https://github.com/williamG7)
-- **LinkedIn**: [William Guzmán](https://www.linkedin.com/in/williamg7/)
+- **LinkedIn**: [William Guzmán](https://www.linkedin.com/in/williamg7dev/)
 - **Email**: williamg7.dev@gmail.com
 
 ## Licencia
